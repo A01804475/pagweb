@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view port" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Cove-Fine Coffee/css/formato.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c78eede48c.js" crossorigin="anonymous"></script>
+        <title>Cove-Fine Coffee</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="navega" id="navega">
+                <li><a href="#inicio"><i class="fa-solid fa-house-user"></i>Inicio</a></li>
+                <li><a href="#menu"><i class="fa-solid fa-utensils"></i>Menú</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+                <li><a href="#galeria"><i class="fa-solid fa-images"></i>Galería</a></li>
+                <li><a href="#blog"><i class="fa-solid fa-blog"></i>Blog</a></li>
+            </ul>
+            <div class="hamburguesa"><a href="javascript:void(0);" onclick="menu()"><i class="fas fa-bars"></i>Menú</a></div>
+        </nav>
+        <div class="hero fullheight" id="inicio">
+            <h1 class="titulos">Cove-Fine Coffee</h1>
+            <h3 class="titulos">Cafetería</h3>
+        </div>
+        <div class="menu" id="menu">
+            <h1 class="titulos">Nuestro Menú</h1>
+            <div class="row">
+                <div class="col-4">
+                    <div class="tarjeta">
+                        <img src="img/café.jpg" alt="Café">
+                        <h2>Café</h2>
+                        <b><p>Los mejores sabores de todo México</p></b>
+                        <ul>
+                            <li>Americano</li>
+                            <li>Expresso</li>
+                            <li>Cappuccino</li>
+                            <li>Latte</li>
+                            <li>Moka</li>
+                            <li>Frappé</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tarjeta">
+                        <img src="img/Postres.jpg" alt="Postres">
+                        <h2>Postres</h2>
+                        <b><p>Nuestros deliciosos postres son hechos al día</p></b>
+                        <ul>
+                            <li>Cheescake</li>
+                            <li>Donas</li>
+                            <li>Brownie</li>
+                            <li>Pastel de Chocolate</li>
+                            <li>Pastel de Zarzamora</li>
+                            <li>Pastel de Zanahoria</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tarjeta">
+                        <img src="img/sandwiches.jpg" alt="Salados">
+                        <h2>Salados</h2>
+                        <b><p>Con ingredientes frescos para los que no son tan fan de lo dulce</p></b>
+                        <ul>
+                            <li>Croissant</li>
+                            <li>Croissant de Jamón y Queso</li>
+                            <li>Club Sandwich</li>
+                            <li>Baguette Española</li>
+                            <li>Ensalada Caesar</li>
+                            <li>Ensalda Italiana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacto" id="contacto">
+            <div class="row">
+                <h1>Contacto:</h1>
+                 <div class="col-6">
+                    <h2>Ponte en contacto con nosotros</h2>
+                    <form action="">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" required>
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h2>Siguenos en nuestras redes sociales</h2>
+                    <br>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <div>
+                        <br>
+                        <img src="../Cove-Fine Coffee/img/caferds.jpg" class="rds">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galeria" id="galeria">
+            <h1 class="titulos">Galería de Fotos</h1>
+            <h2>En Cove-Fine Coffee puedes encontrar estas y muchas más delicias</h2>
+            <div class="fila">
+                <div class="columna">
+                    <img src="img/Galería/img (15).jpg">
+                    <img src="img/Galería/img (3).jpg">
+                    <img src="img/Galería/img (5).jpg">
+                    <img src="img/Galería/img (2).jpg">
+                </div>
+                <div class="columna">
+                    <img src="img/Galería/img (7).jpg">
+                    <img src="img/Galería/img (4).jpg">
+                    <img src="img/Galería/img (16).jpg">
+                    <img src="img/Galería/img (8).jpg">
+                </div>
+                <div class="columna">
+                    <img src="img/Galería/img (10).jpg">
+                    <img src="img/Galería/img (12).jpg">
+                    <img src="img/Galería/img (14).jpg">
+                    <img src="img/Galería/img (6).jpg">
+                </div>
+                <div class="columna">
+                    <img src="img/Galería/img (9).jpg">
+                    <img src="img/Galería/img (11).jpg">
+                    <img src="img/Galería/img (13).jpg">
+                    <img src="img/Galería/img (1).jpg">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                    <div class="col-6">
+                        <h3>Ubicación:</h3>
+                        <ul>
+                            <li>(555) 123-4567</li>
+                            <li><br></li>
+                            <li>Dirección: Floral St, <br> London WC2E 8BU, <br> Reino Unido.</li>
+                            <li><br></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.1294711691471!2d-0.12406369347132343!3d51.512839934005996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cc9a373e9d%3A0x821666fd069d28e9!2s15%20James%20St%2C%20London%20WC2E%208BU%2C%20Reino%20Unido!5e0!3m2!1ses!2smx!4v1743649333700!5m2!1ses!2smx" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
+            <div class="row">            
+                <div class="col-12">
+                    <p><i class="fa-regular fa-copyright"></i> Cove-Fine Coffee</p>
+                </div>
+            </div>
+        </footer>
+    <script src="js/Script.js"></script>
+    </body>
+</html>

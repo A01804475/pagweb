@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+.color-1{
+    color:#ffb400;
+}
+
+.color-2{
+    color: #302101;
+}
+
+.color-3{
+  color:#664800;
+}
+
+.titulos{
+    font-family: "Boldonse", system-ui;
+    color:#ffb400;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texto{
+    font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav{
+    background-color:#302101;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.navega {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    display:block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+
+nav a:hover{
+    background-color: #ffb400;
+}
+
+nav a:active{
+    background-color: #664800;
+}
+
+.fullheight{
+    height: 100%;
+}
+
+.hero{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h1{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6em;
+  text-shadow: 2px 2px 4px #101010;
+}
+
+.hero h3{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px #101010;
+}
+
+.menu {
+    background-color:#302101;
+    color: #ffb400;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu h1{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 2.5em;
+}
+
+.row::after{
+    content: "";
+    clear:both;
+    display:table;
+}
+
+.col-1 {width: 8.33%; float: left;padding: 10px;}
+  .col-2 {width: 16.66%;float: left;padding: 10px;}
+  .col-3{width: 25%;float: left;padding: 10px;}
+  .col-4{width:33.33%;float: left;padding: 10px;}
+  .col-5{width: 41.66%;float: left;padding: 10px;}
+  .col-6{width: 50%;float: left;padding: 10px;}
+  .col-7{width: 58.33%;float: left;padding: 10px;}
+  .col-8{width:66.66%;float: left;padding: 10px;}
+  .col-9{width: 75%;float: left;padding: 10px;}
+  .col-10{width: 83.33%;float: left;padding: 10px;}
+  .col-11{width: 91.66%;float: left;padding: 10px;}
+  .col-12{width: 100%;float: left;padding: 10px;}
+
+  @media screen and (max-width: 600px) {
+    [class*="col-"]{
+      width: 100%;
+    }
+  }
+
+  .tarjeta{
+    background-color:  blanchedalmond;
+    color:#302101;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px #101010;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .tarjeta img{
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .tarjeta ul{
+    list-style-type: none;
+  }
+
+  .tarjeta h2{
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1.5em;
+  }
+
+  .contacto {
+    background-color:#ffb400;
+    color:#302101;
+    text-align: center;
+    padding: 30px;
+}
+
+.contacto h2{
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.contacto h1{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.contacto p{
+  font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:large;
+}
+
+.contacto ul{
+  padding:20px;
+  list-style-type: none;
+}
+
+.contacto li{
+  font-family: "Viaoda Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+.contacto a:hover{
+  color: #302101;
+}
+
+.contacto a{
+  color:#302101;
+  text-decoration: none;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"], input[type="email"]{
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;;
+}
+
+select{
+  width: 80%;
+  padding:10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea{
+  width: 80%;
+  height: 20vh;
+  padding:10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"]{
+  background-color: #302101;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button[type="submit"]:hover{
+  box-shadow: 5px 5px 9px #101010;
+}
+
+button[type="submit"]:active{
+  box-shadow: 1px 1px 4px #101010;
+}
+
+.rds{
+  max-width: 75%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color:#ffb400;
+  color:#302101;
+  text-align: center;
+  padding: 30px;
+}
+
+footer h3{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+footer h2{
+font-family: "Boldonse", system-ui;
+font-weight: 400;
+font-style:normal;
+font-size: 1.5em;
+text-align: center;
+}
+
+footer p{
+font-family: "Viaoda Libre", serif;
+font-weight: 400;
+font-style: normal;
+font-size:large;
+}
+
+footer ul{
+padding:20px;
+list-style-type: none;
+}
+
+footer li{
+font-family: "Viaoda Libre", serif;
+font-weight: 400;
+font-style: normal;
+font-size: large;
+}
+
+
+.galeria{
+  background-color: #302101;
+  padding: 50px 25px 25px 25px;
+  text-align: center;
+}
+
+.galeria h1{
+    font-family: "Boldonse", system-ui;
+    color:#ffb400;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 2.5em;
+}
+
+.galeria h2{
+    font-family: "Viaoda Libre", serif;
+    color:#ffb400;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 1.5em;
+}
+
+.fila{
+  display:flex;
+  flex-wrap:wrap;
+  padding:0 4px;
+}
+
+.columna{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.columna img{
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+  transition-duration: 0.5s;
+  opacity: 0.8;
+}
+
+.columna img:hover{
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .columna{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .columna{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  iframe{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  iframe{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.hamburguesa {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hamburguesa{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0px;
+    background-color: #302101;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100vw;
+  }
+
+  .navega{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right:0;
+    background-color: #302101;
+    width: 100%;
+  }
+
+  .navega.mobile{
+    display: flex;
+  }
+
+  .navega li{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+}
+
